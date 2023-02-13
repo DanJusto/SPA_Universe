@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    
+    --text-color-primary: #E1E1E6;
+    --text-color-nav: #8D8D99;
+    --text-color-nav-selected: #FFFFFF;
+    --text-color-button: #FFFFFF;
+    --text-color-button-selected: #02799D;
+}
+
+body {
+    background-image: url(./assets/mountains-universe-1.svg);
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    gap: 5.5rem;
+    padding-top: 4rem;
+    padding-left: 7.2rem;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 4.5rem;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-nav);
+}
+
+ul li a:hover {
+    color: #d3d3e6;
+    transition: 300ms;
+  }
+
+.selected {
+    font-weight: bold;
+    color: var(--text-color-nav-selected);
+}
+
+main {
+    margin-top: 15rem;
+    margin-left: 10.2rem;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 125%;
+    color: var(--text-color-primary);
+}
+
+p {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: var(--text-color-primary);
+    width: clamp(50rem, 50rem + 20vw, 80rem);
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 2.4rem;
+}
+
+#abutton {
+    padding: 1.2rem 3.2rem;
+    text-transform: uppercase;
+    color: var(--text-color-button);
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+#abutton:hover {
+    color: var(--text-color-button-selected);
+    background: #FFFFFF;
+
+}
+
+.universe {
+    background-image: url(./assets/mountains-universe02.svg);
+}
+
+.explorer {
+    background-image: url(./assets/mountains-universe-3.svg);
+}
